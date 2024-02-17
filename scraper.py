@@ -5,7 +5,8 @@ import time
 import pandas as pd
 
 START_URL = "https://exoplanets.nasa.gov/exoplanet-catalog/"
-browser = webdriver.Chrome("C:\Users\Sreekesh\Desktop\WHJ\PYTHON\1on4\C141\C141TA\chromedriver.exe")
+browser = webdriver.Chrome(service=Service(ChromeDriverManager().install()))
+
 
 browser.get(START_URL)
 time.sleep(10)
